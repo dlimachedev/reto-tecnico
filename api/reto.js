@@ -3,6 +3,7 @@
 const uuid = require('uuid');
 const AWS = require('aws-sdk'); 
 
+//Conexion a DynamoDB
 const dynamoDb = new AWS.DynamoDB.DocumentClient({region: 'us-east-2'});
 
 module.exports.submit = async (event) => {
